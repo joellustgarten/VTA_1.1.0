@@ -1,0 +1,12 @@
+{
+    "upload_title": "VTA | Apagar arquivo do recursos",
+    "language": "Idioma",
+    "delete_title": "Apagar arquivos do recursos",
+    "delete_text": "Para excluir seus arquivos da pasta de recursos, o usuário deve fazer login antes de apagar arquivos. Para evitar mudanças não desejadas na base de dados, verifique o número de ID do arquivo na janela do recursos.",
+    "header1": "Ação",
+    "header2": "Recursos",
+    "header3": "Link",
+    "header4": "Criado",
+    "header5": "Versão",
+    "header6": "Tipo"
+}

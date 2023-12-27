@@ -1,0 +1,7 @@
+{
+    "upload_title": "VTA | Upload HTML .zip files",
+    "language": "Language",
+    "headline": "Upload HTML .zip files to resources",
+    "cont_p": "Only html files in .zip format can be uploaded to the resources folder, user must be logged in before uploading. link to the start page is created after file transfer. Version is set by default as V1.0, if the system detects a copy of the file, user must change file name (add V and number) and select a higher version.",
+    "option": "Please Choose..."
+}

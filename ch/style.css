@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./font2/Orbitron-Regular.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron',sans-serif;
+  transition: all 0.4s ease;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #525F6B;
+}
+.logo{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.wrapper{
+  user-select: none;
+}
+.wrapper .time{
+  height: 100px;
+  background: #323840;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+  padding: 0 10px;
+}
+.wrapper .time span{
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+.time span.colon{
+  width: 10px;
+}
+.time span.ms-colon,
+.time span.millisecond{
+  color: #BFC0C2;
+}
+.wrapper .buttons{
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons button{
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  color: #fff;
+  background: #323840;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.09);
+}
+.buttons button.active,
+.buttons button.stopActive{
+  pointer-events: none;
+  opacity: 0.7;
+}

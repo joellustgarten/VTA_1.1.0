@@ -1,0 +1,12 @@
+{
+    "upload_title": "VTA | Borrar archivo de recursos",
+    "language": "Idioma",
+    "delete_title": "Borrar archivo de recursos",
+    "delete_text": "Solo elimine sus archivos de la carpeta de recursos, el usuario debe iniciar sesion antes de eliminar archivos. Para evitar cambios no deseados en la base de datos, verifique numero de id del archivo en la pesta\u00F1a de recursos.",
+    "header1": "Action",
+    "header2": "recursos",
+    "header3": "Link",
+    "header4": "Creado",
+    "header5": "Version",
+    "header6": "Tipo"
+} 

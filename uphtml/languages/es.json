@@ -1,0 +1,7 @@
+{
+    "upload_title": "VTA | Upload de archivos HTML .zip",
+    "language": "Idioma",
+    "headline": "Upload de archivos HTML .zip en recursos",
+    "cont_p": "Solo para archivos html en formato .zip en recursos; el usuario debe iniciar sesión primero. El enlace a la página de inicio se crea después de subir el archivo. La versión inicial es V1.0; si el sistema detecta nombre duplicado, se debe cambiar el nombre del archivo (agregue V y número) y seleccione una versión superior.",
+    "option": "Seleccione opción..."
+}

@@ -1,0 +1,7 @@
+{
+    "upload_title": "VTA | Carregar arquivos HTML em .zip",
+    "language": "Idioma",
+    "headline": "Carregar arquivos HTML .zip em recursos",
+    "cont_p": "Somente carregar arquivos html no formato .zip. O usuário deve estar logado antes do upload. o link para a página inicial é criado após o upload. Por padrão a versão é V1.0, se o sistema detectar nome duplicado, o usuário deverá alterar o nome do arquivo (adicionar V e número) e selecionar uma versão superior.",
+    "option": "Escolha uma opção..."
+}

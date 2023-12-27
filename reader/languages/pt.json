@@ -1,0 +1,7 @@
+{
+    "upload_title": "VTA | Upload arquivos .pdf & .ppt",
+    "language": "Idioma",
+    "headline": "Upload arquivos .PDF / .PPT a recursos",
+    "cont_p": "Apenas arquivos .PDF /.PPT podem ser carregados para a pasta de recursos, o usuário deve estar logado antes de enviar os arquivos. A versão padrão do arquivo é V1.0, se o sistema detectar uma cópia do arquivo, o usuário deve alterar o nome do arquivo (adicione V e número) e selecione uma versão superior.",
+    "option": "Escolha uma opção..."
+   }

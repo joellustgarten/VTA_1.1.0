@@ -1,0 +1,12 @@
+{
+    "upload_title": "VTA | Delete resource files",
+    "language": "Language",
+    "delete_title": "Delete file from resources",
+    "delete_text": "Only delete your own files from the resource folder, user must be logged in before deleting files. To avoid undesired changes in the database, verify file id number in the resouces tab.",
+    "header1": "Action",
+    "header2": "Resources",
+    "header3": "Link",
+    "header4": "Created",
+    "header5": "Version",
+    "header6": "Type"
+}
