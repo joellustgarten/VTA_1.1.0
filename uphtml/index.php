@@ -70,6 +70,7 @@ function getData($conn, $query)
         </div>
         <form class="form" method="post" enctype="multipart/form-data" action="upload_zip_script.php">
             <div class="text_field_container">
+                <div class="text"><p>Topic</p></div>
                 <div class="styled_select_1">
                     <?PHP
                     $query = "select topic_name from topic";

@@ -1,6 +1,6 @@
 <?php
-ob_start();
-require "C:/xampp/htdocs/VTA_1.1.0/PHP/connection.php";
+session_start();
+require "../PHP/connection.php";
 $res;
 if(!isset($_POST['submit'])){
     $searchTerm = "SELECT * FROM technical_dictionary";
@@ -8,7 +8,7 @@ if(!isset($_POST['submit'])){
 	$number = mysqli_num_rows($res);
 } elseif(isset($_POST['submit'])){
     $term = mysqli_real_escape_string($conn, $_POST['search']);
-    $searchTerm = "SELECT * FROM technical_dictionary WHERE portuguese like '%{$term}%' or english like '%{$term}%' or german like '%{$term}%' or french like '%{$term}%' or spanish like '%{$term}%' or italian like '%{$term}%' or swedish like '%{$term}%'";
+    $searchTerm = "SELECT * FROM technical_dictionary WHERE PORTUGUESE like '%{$term}%' or ENGLISH like '%{$term}%' or GERMAN like '%{$term}%' or FRENCH like '%{$term}%' or SPANISH like '%{$term}%' or ITALIAN like '%{$term}%' or SWEDISH like '%{$term}%'";
     $res = mysqli_query($conn, $searchTerm);
 	$number = mysqli_num_rows($res);
 }
@@ -57,13 +57,13 @@ if(!isset($_POST['submit'])){
 				while($data = mysqli_fetch_assoc($res)){
 				?>
 				<tr>
-					<td><?php echo $data['portuguese'];?></td>
-					<td><?php echo $data['english'];?></td>
-					<td><?php echo $data['german'];?></td>
-					<td><?php echo $data['french'];?></td>
-					<td><?php echo $data['spanish'];?></td>
-					<td><?php echo $data['italian'];?></td>
-					<td><?php echo $data['swedish'];?></td>
+					<td><?php echo $data['PORTUGUESE'];?></td>
+					<td><?php echo $data['ENGLISH'];?></td>
+					<td><?php echo $data['GERMAN'];?></td>
+					<td><?php echo $data['FRENCH'];?></td>
+					<td><?php echo $data['SPANISH'];?></td>
+					<td><?php echo $data['ITALIAN'];?></td>
+					<td><?php echo $data['SWEDISH'];?></td>
 				</tr>
 				<?php }} ?>
 			</tbody>

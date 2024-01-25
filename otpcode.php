@@ -32,7 +32,7 @@ if (isset($_GET['error'])) {
             $class = "error_message";
             break;
         case "codeVerified":
-            $error = "Code verified, go to <a href='login_en.php'><u>Login</u></a>";
+            $error = "Code verified, go to <a href='login.php'><u>Login</u></a>";
             $class = "ok_message";
             break;
         default:

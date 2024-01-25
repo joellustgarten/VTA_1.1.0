@@ -36,7 +36,7 @@ if (isset($_GET['error'])) {
             $class = "error_message";
             break;
         case "success":
-            $error = "Success creating user, a validation code was sent to your email. Go to <a href='otpcode_en.php'><u>verification</u></a>";
+            $error = "Success creating user, a validation code was sent to your email. Go to <a href='otpcode.php'><u>verification</u></a>";
             $class = "ok_message";
             break;
         default:
