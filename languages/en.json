@@ -28,6 +28,7 @@
     "upload_html_title": "Upload HTML",
     "edit_title": "Edit resources",
     "setting_button": "Settings\u00A0\u00A0\u1401",
+    "livestream_button" : "Livestream\u00A0\u00A0\u1401",
     "themes_title": "Themes",
     "dark_title": "Dark theme",
     "light_title": "Light theme",
@@ -35,6 +36,7 @@
     "About_title": "About",
     "menu_title": "Virtual Training App: User menu",
     "language_title":"Languages",
+    "livestream_title": "Participants",
     "login_headline":"User Authentication",
     "login_text":"Login with your email or username and password. If you have problems, please contact administrator ",
     "email_link": "here",
@@ -69,5 +71,7 @@
     "table2_head4": "Created",
     "table2_head5": "Version",
     "table2_head6": "Type",
-    "uppdf_title": "VTA | Upload .pdf & .ppt files"
+    "uppdf_title": "VTA | Upload .pdf & .ppt files",
+    "livestream-registration":"Registration",
+    "livestream-management": "Management"
 }

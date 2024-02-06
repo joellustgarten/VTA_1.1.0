@@ -27,6 +27,7 @@
     "upload_html_title": "Subir HTML",
     "edit_title": "Editar recursos",
     "setting_button": "Configurações\u00A0\u00A0\u1401",
+    "livestream_button" : "Livestream\u00A0\u00A0\u1401",
     "themes_title": "Temas",
     "dark_title": "Tema Dark",
     "light_title": "Tema Light",
@@ -34,6 +35,7 @@
     "About_title": "Sobre Nos",
     "menu_title": "Virtual Training App: Menu do ususario",
     "language_title": "Idioma",
+    "livestream_title": "Participantes",
     "login_headline":"Validação do usuario",
     "login_text":"Acesse con e-mail ou nome de usuário e senha. problemas, fazer contato com o administrador ",
     "email_link": "aqui",
@@ -68,5 +70,7 @@
     "table2_head4": "Criado",
     "table2_head5": "Versão",
     "table2_head6": "Tipo",
-    "uppdf_title": "VTA | Upload arquivos .pdf & .ppt"
+    "uppdf_title": "VTA | Upload arquivos .pdf & .ppt",
+    "livestream-registration":"Registro",
+    "livestream-management": "Gerenciamento"
   }

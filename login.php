@@ -17,7 +17,7 @@ if (isset($_GET['error'])) {
             $class = "error_message";
             break;
         case "wrongLogin":
-            $error = nl2br("Invalid name or email\nTo create an account sign up <a href='signup_en.php'><u>here</u></a>");
+            $error = nl2br("Invalid name or email\nTo create an account sign up <a href='signup.php'><u>here</u></a>");
             $class = "error_message";
             break;
         case "wrongPwd":
@@ -29,8 +29,8 @@ if (isset($_GET['error'])) {
             $class = "error_message";
             break;
         case "notVerified":
-            $error = nl2br("Account not verified\nConfirm account info with OTP code <a href='otpcode_en.php'><u>here</u></a>");
-            $class = "error_message";
+           $error = nl2br("Account not verified\nConfirm account info with OTP code <a href='otpcode.php'><u>here</u></a>");
+           $class = "error_message";
             break;
         default:
             $error = "";
@@ -62,7 +62,7 @@ if (isset($_GET['error'])) {
         </form>
         <div class="lower_p">
             <p class="cont_p member" data-i18n="forgotpass_tittle"></p>
-            <a class="email_link" href="forgotpass_en.php" data-i18n="forgotpass_link"></a>
+            <a class="email_link" href="forgotpass.php" data-i18n="forgotpass_link"></a>
         </div>
     </div>
 </div>

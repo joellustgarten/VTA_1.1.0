@@ -146,8 +146,27 @@ $user = $_SESSION['username'];
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown3" aria-haspopup="true"
+                            aria-expanded="false" aria-label="livestream" data-i18n="livestream_button">
+                        </button>    
+                        <div id="dropdown3" class="dropdown">
+                            <ul role="menu">
+                                <li>
+                                    <span class="dropdown-link-title2" data-i18n="livestream_title"></span>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="dropdown-link" href="" onclick="openLivestream()" data-i18n="livestream-registration"></a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="dropdown-link" href="" onclick="#" data-i18n="livestream-management">Management</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a class="nav-link" href="resources1.php" data-i18n="resorces_title"></a></li>
-                    <li><a class="nav-link" href="" onclick="openLivestream()">Livestream</a></li>
+                   <!-- <li><a class="nav-link" href="" onclick="openLivestream()">Livestream</a></li>-->
+
                     <li><a class="nav-link" href="" data-i18n="About_title"></a></li>
                 </ul>
                 <div class="page_title" data-i18n="menu_title"></div>
