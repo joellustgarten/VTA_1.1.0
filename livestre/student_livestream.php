@@ -2,6 +2,8 @@
 session_start();
 include '../PHP/connection.php';
 
+
+
 if (isset($_SESSION)) {
     $user = $_SESSION['username'];
 }
@@ -25,13 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $date_ends = $_POST['end_day'];
     }
 
-if(emptyInput($link, $participant, $date_start, $date_ends)) {
+if(emptyInput($link, $participant, $date_start, $date_ends, $user)) {
     header('Location:index.php?errors=fields');
     exit();
 }
 
 
-if(inserDBdata($conn, $link,$participant, $date_start, $date_ends)){
+if(inserDBdata($conn, $link,$participant, $date_start, $date_ends, $user)){
     header('Location:index.php?errors=no_error');
 } else {
     header('Location:index.php?errors=updateDBerror');
@@ -40,9 +42,9 @@ if(inserDBdata($conn, $link,$participant, $date_start, $date_ends)){
 }
 
 
-function emptyInput($link, $participant, $date_start, $date_ends) {
+function emptyInput($link, $participant, $date_start, $date_ends, $user) {
 $result = true;
-if(empty($link) || empty($participant) || empty($date_start) || empty($date_ends)) {
+if(empty($link) || empty($participant) || empty($date_start) || empty($date_ends) || empty($user)) {
     $result =  true;
 } else {
     $result = false;
@@ -51,8 +53,8 @@ return $result;
 }
 
 
-function inserDBdata($conn, $link, $participant, $date_start, $date_ends){
-    $sql = "INSERT INTO livestream (link, participant, start_day, end_day) VALUES(?,?,?,?);";
+function inserDBdata($conn, $link, $participant, $date_start, $date_ends, $user){
+    $sql = "INSERT INTO livestream (link, participant, start_day, end_day, trainer) VALUES(?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
  
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -60,7 +62,7 @@ function inserDBdata($conn, $link, $participant, $date_start, $date_ends){
        exit();
     }
  
-    mysqli_stmt_bind_param($stmt, 'ssss', $link, $participant, $date_start, $date_ends);
+    mysqli_stmt_bind_param($stmt, 'sssss', $link, $participant, $date_start, $date_ends, $user);
     if (mysqli_stmt_execute($stmt)) {
        mysqli_stmt_close($stmt);
        return true;

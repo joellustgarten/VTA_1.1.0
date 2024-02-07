@@ -159,7 +159,7 @@ $user = $_SESSION['username'];
                                     <a class="dropdown-link" href="" onclick="openLivestream()" data-i18n="livestream-registration"></a>
                                 </li>
                                 <li role="menuitem">
-                                    <a class="dropdown-link" href="" onclick="#" data-i18n="livestream-management">Management</a>
+                                    <a class="dropdown-link" href="" onclick="openManageLivestream()" data-i18n="livestream-management"></a>
                                 </li>
                             </ul>
                         </div>
@@ -206,6 +206,9 @@ $user = $_SESSION['username'];
             }
             function openLivestream() {
                 window.open("./livestre/index.php", "popup=yes", "width=800, height=700, top=0, left=0");
+            }
+            function openManageLivestream() {
+                window.open("./livestre/manage.php", "popup=yes", "width=1000, height=700, top=0, left=0");
             }
 
 
