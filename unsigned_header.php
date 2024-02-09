@@ -65,9 +65,6 @@
 
       const langData = await fetchLanguageData(lang);
       updateContent(langData);
-
-
-      //toggleArabicStylesheet(lang);// Toggle Arabic stylesheet
     }
 
     // Call updateContent() on page load
@@ -75,7 +72,6 @@
       const userPreferredLanguage = localStorage.getItem('language') || 'en';
       const langData = await fetchLanguageData(userPreferredLanguage);
       updateContent(langData);
-      //toggleArabicStylesheet(userPreferredLanguage);
     });
 
   </script>

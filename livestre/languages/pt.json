@@ -7,9 +7,11 @@
     "course_name": "Nome do treinamento",
     "option": "Seleccione uma opçao...",
     "p_date": "Data do curso",
-    "table2_head1": "Treinamento",
+    "table2_head1": "Accion",
     "table2_head2": "Participante",
     "table2_head3": "Data inicio",
     "table2_head4": "Data fim",
-    "table2_head5": "Trenador"
+    "table2_head5": "Trenador",
+    "headline_management": "Gerenciamento de acesso ao livestream",
+    "cont_p_management": "Selecione os dados de acesso do participante da transmissão ao vivo para editar ou excluir, você pode alterar o nome e as datas. A lista de materiais de treinamento é baseada no perfil do formador"
 }

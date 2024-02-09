@@ -2,18 +2,43 @@
 include '../PHP/connection.php';
 session_start();
 
-$link = "";
-$participant = "";
-$start_day = "";
-$end_day = "";
-$trainer = "";
-
 if (isset($_SESSION)) {
     $user = $_SESSION['username'];
 }
 
+$error_mes = "";
+$class = "";
 
-$query = "SELECT * FROM livestream WHERE user='$user'";
+if (isset($_GET['errors'])) {
+    $errors = $_GET['errors'];
+    
+    switch ($errors) {
+        case 'fields':
+            $error_mes = 'Please fill all fields';
+            $class = "error_message";
+            break;
+        case 'stmtFailed':
+            $error_mes = 'Database connection error';
+            $class = "error_message";
+            break;
+        case 'updateDBerror':
+            $error_mes = 'Error registering participant';
+            $class = "error_message";
+            break;
+        case 'no_error':
+            $error_mes = 'Successful participant registration';
+            $class = "ok_message";
+            break;
+        default:
+            $error_mes = "";
+            $class = "no_error_message";
+    }
+} else {
+    $error_mes = "";
+    $class = "no_error_message";
+}
+
+$query = "SELECT * FROM livestream WHERE trainer='$user'";
 $result = mysqli_query($conn, $query);
 
 ?>
@@ -39,6 +64,11 @@ $result = mysqli_query($conn, $query);
             <a href="" onclick="changeLanguage('pt')">PT</a>
         </div>
         <h1 class="form_headline" data-i18n="headline_management"></h1>
+        <div class="<?php echo $class; ?>">
+            <p>
+                <?php echo $error_mes ?>
+            </p>
+        </div>
         <p class="cont_p" data-i18n="cont_p_management"></p>
         <div class="container_table">
             <div class="menu_table">
@@ -49,12 +79,10 @@ $result = mysqli_query($conn, $query);
                         <th data-i18n="table2_head3"></th>
                         <th data-i18n="table2_head4"></th>
                         <th data-i18n="table2_head5"></th>
-                        <th data-i18n="table2_head6"></th>
                     </tr>
                     <tr>
-                        <!--
                     <?php
-                        /* while ($row = mysqli_fetch_assoc($result)) {
+                        while ($row = mysqli_fetch_assoc($result)) {
                             ?>
                             <td id="col_action">
                                 <a href="<?PHP echo $href ?>" class="action_logo" target="_blank"><span
@@ -63,24 +91,20 @@ $result = mysqli_query($conn, $query);
                                         class="material-symbols-outlined">download</span></a>
                             </td>
                             <td id="col-1">
-                                <?php echo $row['link']; ?>
+                                <?php echo $row['participant']; ?>
                             </td>
                             <td id="col-2">
-                                <?php echo $row['participant']; ?>
-                            </td>
-                            <td id="col-3">
                                 <?php echo $row['start_day']; ?>
                             </td>
-                            <td id="col-4">
+                            <td id="col-3">
                                 <?php echo $row['end_day']; ?>
                             </td>
-                            <td id="col-5">
-                                <?php echo $row['participant']; ?>
+                            <td id="col-4">
+                                <?php echo $row['trainer']; ?>
                             </td>
                         </tr>
                         <?php
                         }
-                        */
                         ?>
                         -->
                 </table>

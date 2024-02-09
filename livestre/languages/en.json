@@ -7,11 +7,11 @@
     "course_name": "Course tittle",
     "option": "Select an option...",
     "p_date": "Training dates", 
-    "table2_head1": "Course",
+    "table2_head1": "Action",
     "table2_head2": "Participant",
     "table2_head3": "Start date",
     "table2_head4": "End date",
     "table2_head5": "Trainer",
-    "headline_management": "Management of trainning participants livestream access",
+    "headline_management": "Management of participants livestream access",
     "cont_p_management": "Select livestream trainning participant to edit or delete, you can change participant name and training date. The list of training materials is based on trainers profile"
 }

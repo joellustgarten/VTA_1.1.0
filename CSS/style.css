@@ -376,6 +376,20 @@ header .frieze::after
     margin-bottom: 50px;
 }
 
+.container_legal {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container_legal::after, 
+.container_legal:before {
+    display: table;
+    content: " ";
+}
+
 
 .container_login {
     width: 400px;
@@ -420,7 +434,9 @@ header .frieze::after
     color: var(--normal_font);
 }
 
-
+section {
+    display: block;
+}
 
 .container_library {
     width: 90%;
@@ -963,3 +979,43 @@ margin-right: 170px;
     border: 1px solid;
     
 }
+
+.main_text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .main_text_headline{
+    font-family: 'BoschSans-Light', Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #005691;
+  }
+
+  .main_text_introtext {
+    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+/*
+  p {
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: .875rem;
+    margin-top: 0;
+  }
+*/
+
+.main-text-richtext p{
+    margin-top: 20px;
+}
+
+  
